@@ -1,5 +1,5 @@
 
-# Data 533_Lab2 Trading Account Package
+#Trading Account Package
 
 Here is the repo designed for DATA-533 Lab 2
 
