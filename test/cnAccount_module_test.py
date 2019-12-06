@@ -1,8 +1,13 @@
 import unittest
-from tradingaccount.account.cnaccount import cnAccount
 import pandas as pd
 from datetime import datetime
 
+import os
+import sys
+if os.path.dirname(os.getcwd()) not in sys.path:
+    sys.path.append(os.path.dirname(os.getcwd()))
+
+from tradingaccount.account.cnaccount import cnAccount
 
 class TestCnAccount(unittest.TestCase):
     @classmethod
@@ -61,4 +66,5 @@ class TestCnAccount(unittest.TestCase):
         print('print stock_history in this test in tearDownClass:')
         print(cls.t1.stock_history)
 
-unittest.main(argv=[''], verbosity=2, exit=False)
+if __name__=='__main__':
+    unittest.main(argv=[''], verbosity=2, exit=False)

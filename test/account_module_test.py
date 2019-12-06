@@ -2,6 +2,13 @@ import unittest
 import pandas as pd
 from datetime import datetime
 
+import os
+import sys
+if os.path.dirname(os.getcwd()) not in sys.path:
+    sys.path.append(os.path.dirname(os.getcwd()))
+
+from tradingaccount.account.account import Account
+
 
 class TestAccount(unittest.TestCase):
     @classmethod
@@ -55,4 +62,5 @@ class TestAccount(unittest.TestCase):
         print('print account_history in this test in tearDownClass:')
         print(cls.t1.account_history)
 
-unittest.main(argv=[''], verbosity=2, exit=False)
+if __name__=='__main__':
+    unittest.main(argv=[''], verbosity=2, exit=False)
