@@ -10,7 +10,7 @@ if os.path.dirname(os.getcwd()) not in sys.path:
 from tradingaccount.account.usaccount import usAccount
 
 
-class TestCnAccount(unittest.TestCase):
+class TestUsAccount(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print('Initialize account instance in setUpClass')
