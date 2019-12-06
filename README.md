@@ -1,9 +1,7 @@
 
-#Trading Account Package
+# Trading Account Package
 
-Here is the repo designed for DATA-533 Lab 2
-
-Group Members:
+Created by:
 •	Huazi Li
 •	Weiwei Liu
 
